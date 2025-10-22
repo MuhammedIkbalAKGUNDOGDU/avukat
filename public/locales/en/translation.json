@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "practiceAreas": "Practice Areas",
+    "team": "Our Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Expert Legal Solutions You Can Trust",
+    "subtitle": "Providing comprehensive legal services for individuals and businesses.",
+    "cta": "Get a Free Consultation"
+  },
+  "home": {
+    "practiceAreasTitle": "Our Practice Areas",
+    "teamTitle": "Meet Our Expert Lawyers"
+  },
+  "about": {
+    "title": "About Our Firm",
+    "subtitle": "Trusted Legal Excellence Since 1995",
+    "description": "We are a leading law firm dedicated to providing exceptional legal services. Our team of experienced attorneys combines deep legal knowledge with a client-focused approach to deliver outstanding results.",
+    "mission": "Our Mission",
+    "missionText": "To provide accessible, high-quality legal services while maintaining the highest ethical standards and building lasting relationships with our clients.",
+    "values": "Our Values",
+    "integrity": "Integrity",
+    "integrityText": "We uphold the highest ethical standards in all our professional dealings.",
+    "excellence": "Excellence",
+    "excellenceText": "We strive for exceptional results through continuous learning and dedication.",
+    "clientFocus": "Client Focus",
+    "clientFocusText": "Your success is our priority. We listen, understand, and deliver."
+  },
+  "contactForm": {
+    "title": "Get In Touch",
+    "subtitle": "We're here to help. Contact us today to schedule a consultation.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "success": "Thank you! We'll be in touch soon.",
+    "contactInfo": "Contact Information",
+    "officeHours": "Office Hours",
+    "hoursText": "Monday - Friday: 9:00 AM - 6:00 PM"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "address": "123 Law St, Justice City, 10100",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@lawfirm.com",
+    "copyright": "© 2025 Your Law Firm. All Rights Reserved."
+  },
+  "practiceArea": {
+    "viewDetails": "View Details",
+    "allAreas": "All Practice Areas",
+    "corporate_law_title": "Corporate Law",
+    "corporate_law_desc": "Expert advice on mergers, acquisitions, and corporate governance.",
+    "corporate_law_details": "Our corporate law practice provides comprehensive legal services to businesses of all sizes. We specialize in mergers and acquisitions, corporate governance, compliance, contract negotiations, and business formations. Our experienced attorneys work closely with clients to navigate complex corporate matters and achieve strategic business objectives.",
+    "family_law_title": "Family Law",
+    "family_law_desc": "Compassionate handling of divorce, custody, and family disputes.",
+    "family_law_details": "We understand that family matters are deeply personal and emotionally challenging. Our family law team provides compassionate representation in divorce proceedings, child custody disputes, adoption, prenuptial agreements, and domestic relations. We strive to protect your interests while minimizing conflict and stress.",
+    "criminal_defense_title": "Criminal Defense",
+    "criminal_defense_desc": "Vigorous defense for all criminal charges and investigations.",
+    "criminal_defense_details": "Our criminal defense attorneys are committed to protecting your rights and freedom. We provide aggressive representation in all criminal matters, from misdemeanors to serious felonies. Our team has extensive courtroom experience and a proven track record of favorable outcomes for our clients.",
+    "real_estate_title": "Real Estate Law",
+    "real_estate_desc": "Comprehensive services for property transactions and disputes.",
+    "real_estate_details": "Whether you're buying, selling, or leasing property, our real estate attorneys ensure smooth transactions and protect your interests. We handle residential and commercial real estate matters, including purchase agreements, title issues, zoning, land use, and property disputes.",
+    "intellectual_property_title": "Intellectual Property",
+    "intellectual_property_desc": "Protection for patents, trademarks, and copyrights.",
+    "intellectual_property_details": "Protect your creative works and innovations with our intellectual property services. We assist with patent applications, trademark registration, copyright protection, licensing agreements, and IP litigation. Our team helps safeguard your valuable intellectual assets.",
+    "employment_law_title": "Employment Law",
+    "employment_law_desc": "Guidance on workplace rights, disputes, and compliance.",
+    "employment_law_details": "We represent both employers and employees in all aspects of employment law. Our services include employment contracts, discrimination claims, wrongful termination, workplace harassment, wage disputes, and HR compliance. We work to resolve workplace issues efficiently and fairly."
+  },
+  "lawyer": {
+    "viewProfile": "View Profile",
+    "education": "Education",
+    "barAdmissions": "Bar Admissions",
+    "practiceAreas": "Practice Areas",
+    "experience": "Experience",
+    "jane_doe_title": "Senior Partner",
+    "jane_doe_bio": "Jane Doe has 20 years of experience in corporate law and mergers & acquisitions. She has successfully represented Fortune 500 companies and startups alike, guiding them through complex business transactions and corporate restructuring. Jane is known for her strategic thinking and client-focused approach.",
+    "jane_doe_edu": "J.D., Harvard Law School | B.A., Yale University",
+    "john_smith_title": "Associate Attorney",
+    "john_smith_bio": "John Smith specializes in family law and litigation with over 10 years of courtroom experience. He is passionate about protecting families and ensuring fair outcomes in difficult situations. John's empathetic approach combined with strong advocacy makes him a trusted advisor for his clients.",
+    "john_smith_edu": "LL.B., Yale Law School | B.A., Stanford University",
+    "sarah_johnson_title": "Partner",
+    "sarah_johnson_bio": "Sarah Johnson is a leading expert in criminal defense with 15 years of experience. She has successfully defended clients in high-profile cases and is recognized for her meticulous preparation and persuasive courtroom presence. Sarah is committed to protecting the rights of the accused.",
+    "sarah_johnson_edu": "J.D., Columbia Law School | B.S., MIT",
+    "michael_chen_title": "Senior Partner",
+    "michael_chen_bio": "Michael Chen brings 25 years of experience in real estate and commercial law. He has negotiated billions of dollars in property transactions and resolved complex real estate disputes. Michael's extensive knowledge of property law and business acumen make him an invaluable asset to clients.",
+    "michael_chen_edu": "J.D., UC Berkeley School of Law | M.B.A., Wharton School"
+  }
+}

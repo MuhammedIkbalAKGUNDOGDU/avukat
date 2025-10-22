@@ -1,0 +1,291 @@
+Role: You are an expert Senior React Developer. Your task is to generate a professional, frontend-only website application for a law firm.
+
+Core Technologies:
+
+Framework: React.js (using Hooks)
+
+Bundler/Environment: Vite + React
+
+Styling: Tailwind CSS
+
+Routing: react-router-dom
+
+Internationalization (i18n): i18next and react-i18next
+
+Project Requirements:
+
+Project Structure: Create a clean, component-based structure. Provide the code for each file separately, clearly labeling the file path (e.g., src/App.jsx, src/pages/HomePage.jsx).
+
+Tailwind CSS Setup: Provide tailwind.config.js and src/index.css configured for a Vite + React project. The design should be professional, clean, and trustworthy (e.g., using a color palette of navy blue, white, and gold/beige).
+
+Routing: Set up react-router-dom for all pages. The routes should include /, /about, /practice-areas, /practice-areas/:slug, /team, /team/:lawyerId, and /contact.
+
+Multi-Language (i18n):
+
+The site must support English (EN), Turkish (TR), and Arabic (AR).
+
+Use the i18next library. Create a config file src/i18n.js.
+
+Crucially, pre-fill the translation JSON files with relevant, professional text for a law firm, as specified in section 8.
+
+All text in components must be rendered using the useTranslation() hook (e.g., t('nav.about')).
+
+RTL Support:
+
+The application must dynamically set dir="rtl" on the <html> tag when Arabic is selected. This logic should be in App.jsx using a useEffect hook that listens to i18n.language.
+
+All Tailwind CSS classes must use logical properties (e.g., ms-4 instead of ml-4, pe-2 instead of pr-2, text-start instead of text-left) to ensure the layout flips correctly for RTL.
+
+Mock Data: Create a src/mockData.js file to export arrays for lawyers and practiceAreas. This data will be imported and used by components.
+
+File Structure & Code to Generate:
+
+1. Config: tailwind.config.js (Standard Vite/React setup)
+
+2. Config: src/index.css (With @tailwind base;, @tailwind components;, @tailwind utilities;)
+
+3. i18n Config: src/i18n.js (Configuration for i18next, react-i18next, and HttpBackend to load JSON files from /locales/)
+
+4. Main App: src/main.jsx (Import and initialize i18n.js here)
+
+5. Main App: src/App.jsx (Main layout with Navbar, Footer, and <Outlet />. Include the useEffect hook for RTL support.)
+
+6. Router: src/Router.jsx (Define all routes using createBrowserRouter: /, /about, /practice-areas, /practice-areas/:slug, /team, /team/:lawyerId, /contact.)
+
+7. Mock Data: src/mockData.js
+
+Create a practiceAreas array. Each object needs: id, slug, icon (e.g., a string for a placeholder icon), titleKey, descriptionKey, fullDetailsKey.
+
+Create a lawyers array. Each object needs: id, name, imageUrl, titleKey (e.g., 'partner', 'associate'), bioKey, educationKey.
+
+8. i18n JSON Files (Pre-filled):
+
+public/locales/en/translation.json
+
+JSON
+
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "practiceAreas": "Practice Areas",
+    "team": "Our Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Expert Legal Solutions You Can Trust",
+    "subtitle": "Providing comprehensive legal services for individuals and businesses.",
+    "cta": "Get a Free Consultation"
+  },
+  "home": {
+    "practiceAreasTitle": "Our Practice Areas",
+    "teamTitle": "Meet Our Expert Lawyers"
+  },
+  "contactForm": {
+    "title": "Get In Touch",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "address": "123 Law St, Justice City, 10100",
+    "copyright": "© 2025 Your Law Firm. All Rights Reserved."
+  },
+  "practiceArea": {
+    "corporate_law_title": "Corporate Law",
+    "corporate_law_desc": "Expert advice on mergers, acquisitions, and corporate governance.",
+    "corporate_law_details": "Full details about our corporate law services...",
+    "family_law_title": "Family Law",
+    "family_law_desc": "Compassionate handling of divorce, custody, and family disputes.",
+    "family_law_details": "Full details about our family law services..."
+  },
+  "lawyer": {
+    "jane_doe_title": "Senior Partner",
+    "jane_doe_bio": "Jane Doe has 20 years of experience in corporate law...",
+    "jane_doe_edu": "J.D., Harvard Law School",
+    "john_smith_title": "Associate Attorney",
+    "john_smith_bio": "John Smith specializes in family law and litigation...",
+    "john_smith_edu": "LL.B., Yale Law School"
+  }
+}
+public/locales/tr/translation.json
+
+JSON
+
+{
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "practiceAreas": "Çalışma Alanları",
+    "team": "Ekibimiz",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Güvenebileceğiniz Uzman Hukuki Çözümler",
+    "subtitle": "Bireyler ve işletmeler için kapsamlı hukuki hizmetler sunuyoruz.",
+    "cta": "Ücretsiz Danışmanlık Alın"
+  },
+  "home": {
+    "practiceAreasTitle": "Çalışma Alanlarımız",
+    "teamTitle": "Uzman Avukatlarımızla Tanışın"
+  },
+  "contactForm": {
+    "title": "Bize Ulaşın",
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "message": "Mesajınız",
+    "submit": "Mesajı Gönder"
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "address": "123 Hukuk Cad, Adalet Şehri, 10100",
+    "copyright": "© 2025 Hukuk Büronuz. Tüm Hakları Saklıdır."
+  },
+  "practiceArea": {
+    "corporate_law_title": "Şirketler Hukuku",
+    "corporate_law_desc": "Birleşme, devralmalar ve kurumsal yönetim konularında uzman tavsiyesi.",
+    "corporate_law_details": "Şirketler hukuku hizmetlerimiz hakkında tüm detaylar...",
+    "family_law_title": "Aile Hukuku",
+    "family_law_desc": "Boşanma, velayet ve aile anlaşmazlıklarının şefkatli bir şekilde ele alınması.",
+    "family_law_details": "Aile hukuku hizmetlerimiz hakkında tüm detaylar..."
+  },
+  "lawyer": {
+    "jane_doe_title": "Kıdemli Ortak Avukat",
+    "jane_doe_bio": "Jane Doe, şirketler hukukunda 20 yıllık deneyime sahiptir...",
+    "jane_doe_edu": "Hukuk Doktoru, Harvard Hukuk Fakültesi",
+    "john_smith_title": "Avukat",
+    "john_smith_bio": "John Smith, aile hukuku ve dava konularında uzmanlaşmıştır...",
+    "john_smith_edu": "Hukuk Lisansı, Yale Hukuk Fakültesi"
+  }
+}
+public/locales/ar/translation.json
+
+JSON
+
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "practiceAreas": "مجالات الممارسة",
+    "team": "فريقنا",
+    "contact": "اتصل بنا"
+  },
+  "hero": {
+    "title": "حلول قانونية خبيرة يمكنك الوثوق بها",
+    "subtitle": "نقدم خدمات قانونية شاملة للأفراد والشركات.",
+    "cta": "احصل على استشارة مجانية"
+  },
+  "home": {
+    "practiceAreasTitle": "مجالات ممارستنا",
+    "teamTitle": "تعرف على محامينا الخبراء"
+  },
+  "contactForm": {
+    "title": "تواصل معنا",
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "message": "رسالتك",
+    "submit": "إرسال الرسالة"
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "contactInfo": "معلومات الاتصال",
+    "address": "123 شارع القانون، مدينة العدل، 10100",
+    "copyright": "© 2025 مكتب المحاماة الخاص بك. جميع الحقوق محفوظة."
+  },
+  "practiceArea": {
+    "corporate_law_title": "قانون الشركات",
+    "corporate_law_desc": "استشارات متخصصة في عمليات الدمج والاستحواذ وحوكمة الشركات.",
+    "corporate_law_details": "تفاصيل كاملة حول خدمات قانون الشركات لدينا...",
+    "family_law_title": "قانون الأسرة",
+    "family_law_desc": "معالجة رحيمة لقضايا الطلاق والحضانة والنزاعات الأسرية.",
+    "family_law_details": "تفاصيل كاملة حول خدمات قانون الأسرة لدينا..."
+  },
+  "lawyer": {
+    "jane_doe_title": "شريك أول",
+    "jane_doe_bio": "جين دو لديها 20 عامًا من الخبرة في قانون الشركات...",
+    "jane_doe_edu": "دكتوراه في القانون، كلية الحقوق بجامعة هارفارد",
+    "john_smith_title": "محامي مشارك",
+    "john_smith_bio": "جون سميث متخصص في قانون الأسرة والتقاضي...",
+    "john_smith_edu": "ليسانس حقوق، كلية الحقوق بجامعة ييل"
+  }
+}
+9. Component Files (src/components/):
+
+src/components/Navbar.jsx:
+
+Uses <Link> for navigation links (Home, About, Practice Areas, Team, Contact).
+
+Includes <LanguageSwitcher />.
+
+Responsive "hamburger" menu.
+
+src/components/LanguageSwitcher.jsx:
+
+Dropdown to select 'en', 'tr', or 'ar', calling i18n.changeLanguage().
+
+src/components/Footer.jsx:
+
+Professional footer with links, contact info, and copyright (all text from t()).
+
+src/components/PracticeAreaCard.jsx:
+
+Takes an area prop (from mockData.js).
+
+Renders an icon, t(area.titleKey), and t(area.descriptionKey).
+
+Wraps the card in a <Link> to /practice-areas/${area.slug}.
+
+src/components/LawyerProfileCard.jsx:
+
+Takes a lawyer prop.
+
+Renders lawyer.imageUrl, lawyer.name, and t(lawyer.titleKey).
+
+Wraps the card in a <Link> to /team/${lawyer.id}.
+
+10. Page Files (src/pages/):
+
+src/pages/HomePage.jsx:
+
+Hero Section: Full-width with a professional background image, t('hero.title'), t('hero.subtitle'), and a CTA button t('hero.cta').
+
+Practice Areas Section: Title t('home.practiceAreasTitle') and a grid of 3-4 <PracticeAreaCard /> components (slicing from mockData.js).
+
+Team Section: Title t('home.teamTitle') and a grid of 3 <LawyerProfileCard /> components.
+
+src/pages/PracticeAreasPage.jsx:
+
+Renders a full grid of all <PracticeAreaCard /> components from mockData.js.
+
+src/pages/PracticeAreaDetailPage.jsx:
+
+Uses useParams() to get the :slug.
+
+Finds the matching area from mockData.js.
+
+Displays t(area.titleKey) and the full t(area.fullDetailsKey).
+
+src/pages/TeamPage.jsx:
+
+Renders a full grid of all <LawyerProfileCard /> components.
+
+src/pages/LawyerProfilePage.jsx:
+
+Uses useParams() to get the :lawyerId.
+
+Finds the matching lawyer from mockData.js.
+
+Displays lawyer.imageUrl, lawyer.name, t(lawyer.titleKey), t(lawyer.bioKey), and t(lawyer.educationKey).
+
+src/pages/ContactPage.jsx:
+
+Displays a contact form (t('contactForm.title'), etc.) and placeholder map.
+
+Please generate the complete, copy-paste-ready code for each of these files, clearly separating them by their file path. Ensure all text is pulled from the i18next useTranslation() hook.

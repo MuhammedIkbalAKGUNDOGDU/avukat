@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "practiceAreas": "Çalışma Alanları",
+    "team": "Ekibimiz",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Güvenebileceğiniz Uzman Hukuki Çözümler",
+    "subtitle": "Bireyler ve işletmeler için kapsamlı hukuki hizmetler sunuyoruz.",
+    "cta": "Ücretsiz Danışmanlık Alın"
+  },
+  "home": {
+    "practiceAreasTitle": "Çalışma Alanlarımız",
+    "teamTitle": "Uzman Avukatlarımızla Tanışın"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "1995'ten Beri Güvenilir Hukuki Mükemmeliyet",
+    "description": "Olağanüstü hukuki hizmetler sunmaya adanmış lider bir hukuk bürosuyuz. Deneyimli avukatlarımız, derin hukuki bilgiyi müvekkil odaklı bir yaklaşımla birleştirerek üstün sonuçlar sunar.",
+    "mission": "Misyonumuz",
+    "missionText": "En yüksek etik standartları koruyarak ve müvekkiller ile kalıcı ilişkiler kurarak erişilebilir, yüksek kaliteli hukuki hizmetler sunmak.",
+    "values": "Değerlerimiz",
+    "integrity": "Dürüstlük",
+    "integrityText": "Tüm profesyonel işlemlerimizde en yüksek etik standartları savunuyoruz.",
+    "excellence": "Mükemmeliyet",
+    "excellenceText": "Sürekli öğrenme ve özveri ile olağanüstü sonuçlar için çabalıyoruz.",
+    "clientFocus": "Müvekkil Odaklılık",
+    "clientFocusText": "Başarınız bizim önceliğimizdir. Dinliyor, anlıyor ve sunuyoruz."
+  },
+  "contactForm": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Yardımcı olmak için buradayız. Bir danışma randevusu ayarlamak için bugün bize ulaşın.",
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "message": "Mesajınız",
+    "submit": "Mesajı Gönder",
+    "success": "Teşekkürler! Yakında sizinle iletişime geçeceğiz.",
+    "contactInfo": "İletişim Bilgileri",
+    "officeHours": "Çalışma Saatleri",
+    "hoursText": "Pazartesi - Cuma: 09:00 - 18:00"
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "address": "123 Hukuk Cad, Adalet Şehri, 10100",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@lawfirm.com",
+    "copyright": "© 2025 Hukuk Büronuz. Tüm Hakları Saklıdır."
+  },
+  "practiceArea": {
+    "viewDetails": "Detayları Görüntüle",
+    "allAreas": "Tüm Çalışma Alanları",
+    "corporate_law_title": "Şirketler Hukuku",
+    "corporate_law_desc": "Birleşme, devralmalar ve kurumsal yönetim konularında uzman tavsiyesi.",
+    "corporate_law_details": "Şirketler hukuku pratiğimiz, her büyüklükteki işletmeye kapsamlı hukuki hizmetler sunar. Birleşme ve devralmalar, kurumsal yönetişim, uyumluluk, sözleşme müzakereleri ve işletme kuruluşlarında uzmanlaşmaktayız. Deneyimli avukatlarımız, karmaşık kurumsal meselelerde yol göstermek için müvekkillerle yakın çalışır.",
+    "family_law_title": "Aile Hukuku",
+    "family_law_desc": "Boşanma, velayet ve aile anlaşmazlıklarının şefkatli bir şekilde ele alınması.",
+    "family_law_details": "Aile meselelerinin derinden kişisel ve duygusal olarak zorlayıcı olduğunu anlıyoruz. Aile hukuku ekibimiz, boşanma davaları, çocuk velayeti anlaşmazlıkları, evlat edinme, evlilik öncesi anlaşmalar ve aile ilişkilerinde şefkatli temsil sağlar.",
+    "criminal_defense_title": "Ceza Savunması",
+    "criminal_defense_desc": "Tüm suç duyuruları ve soruşturmalar için güçlü savunma.",
+    "criminal_defense_details": "Ceza savunma avukatlarımız, haklarınızı ve özgürlüğünüzü korumaya kararlıdır. Kabahattan ciddi suçlara kadar tüm ceza davalarında agresif temsil sağlıyoruz. Ekibimiz geniş mahkeme deneyimine ve kanıtlanmış bir başarı siciline sahiptir.",
+    "real_estate_title": "Gayrimenkul Hukuku",
+    "real_estate_desc": "Mülk işlemleri ve anlaşmazlıkları için kapsamlı hizmetler.",
+    "real_estate_details": "İster mülk alıyor, satıyor veya kiralıyor olun, gayrimenkul avukatlarımız sorunsuz işlemler sağlar ve çıkarlarınızı korur. Satın alma sözleşmeleri, tapu sorunları, imar, arazi kullanımı ve mülk anlaşmazlıkları dahil konut ve ticari gayrimenkul meselelerini ele alıyoruz.",
+    "intellectual_property_title": "Fikri Mülkiyet",
+    "intellectual_property_desc": "Patentler, ticari markalar ve telif hakları için koruma.",
+    "intellectual_property_details": "Yaratıcı eserlerinizi ve yeniliklerinizi fikri mülkiyet hizmetlerimizle koruyun. Patent başvuruları, ticari marka tescili, telif hakkı koruması, lisans anlaşmaları ve fikri mülkiyet davalarında yardımcı oluyoruz.",
+    "employment_law_title": "İş Hukuku",
+    "employment_law_desc": "İşyeri hakları, anlaşmazlıklar ve uyumluluk konusunda rehberlik.",
+    "employment_law_details": "İş hukukunun tüm yönlerinde hem işverenleri hem de çalışanları temsil ediyoruz. Hizmetlerimiz arasında iş sözleşmeleri, ayrımcılık iddiaları, haksız fesih, işyeri tacizi, ücret anlaşmazlıkları ve İK uyumluluğu yer alır."
+  },
+  "lawyer": {
+    "viewProfile": "Profili Görüntüle",
+    "education": "Eğitim",
+    "barAdmissions": "Baro Üyelikleri",
+    "practiceAreas": "Çalışma Alanları",
+    "experience": "Deneyim",
+    "jane_doe_title": "Kıdemli Ortak Avukat",
+    "jane_doe_bio": "Jane Doe, şirketler hukuku ve birleşme-devralmalar alanında 20 yıllık deneyime sahiptir. Fortune 500 şirketlerini ve girişimleri başarıyla temsil ederek karmaşık iş işlemleri ve kurumsal yeniden yapılandırma konularında rehberlik etmiştir.",
+    "jane_doe_edu": "Hukuk Doktoru, Harvard Hukuk Fakültesi | Lisans, Yale Üniversitesi",
+    "john_smith_title": "Avukat",
+    "john_smith_bio": "John Smith, 10 yılı aşkın mahkeme deneyimi ile aile hukuku ve dava konularında uzmanlaşmıştır. Aileleri koruma ve zor durumlarda adil sonuçlar sağlama konusunda tutkuludur.",
+    "john_smith_edu": "Hukuk Lisansı, Yale Hukuk Fakültesi | Lisans, Stanford Üniversitesi",
+    "sarah_johnson_title": "Ortak Avukat",
+    "sarah_johnson_bio": "Sarah Johnson, 15 yıllık deneyimi ile ceza savunmasında önde gelen bir uzmandır. Yüksek profilli davalarda müvekkilleri başarıyla savunmuştur ve titiz hazırlığı ile tanınır.",
+    "sarah_johnson_edu": "Hukuk Doktoru, Columbia Hukuk Fakültesi | Lisans, MIT",
+    "michael_chen_title": "Kıdemli Ortak Avukat",
+    "michael_chen_bio": "Michael Chen, gayrimenkul ve ticaret hukukunda 25 yıllık deneyim getirmektedir. Milyarlarca dolarlık mülk işlemleri müzakere etmiş ve karmaşık gayrimenkul anlaşmazlıklarını çözmüştür.",
+    "michael_chen_edu": "Hukuk Doktoru, UC Berkeley Hukuk Fakültesi | MBA, Wharton School"
+  }
+}
