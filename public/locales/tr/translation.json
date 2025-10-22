@@ -135,6 +135,20 @@
           "avukat hakkı"
         ]
       }
+    },
+    "modal": {
+      "title": "Blog Yazıları Hakkında",
+      "subtitle": "SEO optimizasyonu için önemli bilgilendirme",
+      "warning": "Önemli Not:",
+      "warningText": "Şu anki blog yazıları temsilidir, içerikleri boştur.",
+      "description": "Blog yazıları SEO optimizasyonu için sitenizin öne çıkmasını, daha fazla ilgili kişiye ulaşmanızı sağlamaktadır. Bu blog yazıları isteğiniz durumunda Softium Technologies tarafından en uygun şekilde otomatik olarak her ay sizin adınıza yayınlanabilmektedir.",
+      "advantages": "Avantajlar:",
+      "advantage1": "SEO performansınızı artırır",
+      "advantage2": "Google'da daha üst sıralarda çıkarsınız",
+      "advantage3": "Potansiyel müşterilere daha kolay ulaşırsınız",
+      "advantage4": "Otomatik içerik yönetimi",
+      "understood": "Anladım",
+      "softiumLink": "Softium Technologies"
     }
   },
   "demoModal": {

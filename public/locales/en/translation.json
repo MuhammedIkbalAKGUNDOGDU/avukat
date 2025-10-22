@@ -130,6 +130,20 @@
           "right to attorney"
         ]
       }
+    },
+    "modal": {
+      "title": "About Blog Posts",
+      "subtitle": "Important information for SEO optimization",
+      "warning": "Important Note:",
+      "warningText": "Current blog posts are representative, their content is empty.",
+      "description": "Blog posts help your site stand out for SEO optimization and reach more relevant people. These blog posts can be automatically published monthly on your behalf by Softium Technologies in the most appropriate way if you wish.",
+      "advantages": "Advantages:",
+      "advantage1": "Improves your SEO performance",
+      "advantage2": "You rank higher on Google",
+      "advantage3": "You reach potential customers more easily",
+      "advantage4": "Automatic content management",
+      "understood": "I Understand",
+      "softiumLink": "Softium Technologies"
     }
   },
   "demoModal": {
