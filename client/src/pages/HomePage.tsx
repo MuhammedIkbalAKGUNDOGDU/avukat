@@ -17,6 +17,7 @@ export default function HomePage() {
   const { t } = useTranslation();
 
   const handleBlogCardClick = (slug: string) => {
+    // Use wouter's navigate instead of window.location to preserve state
     window.location.href = `/blog/${slug}`;
   };
 

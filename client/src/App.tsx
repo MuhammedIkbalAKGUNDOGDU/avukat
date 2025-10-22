@@ -38,17 +38,7 @@ function App() {
   const { i18n, ready } = useTranslation();
   const [showDemoModal, setShowDemoModal] = useState(false);
 
-  useEffect(() => {
-    const htmlElement = document.documentElement;
-
-    if (i18n.language === "ar") {
-      htmlElement.setAttribute("dir", "rtl");
-      htmlElement.setAttribute("lang", "ar");
-    } else {
-      htmlElement.setAttribute("dir", "ltr");
-      htmlElement.setAttribute("lang", i18n.language);
-    }
-  }, [i18n.language]);
+  // HTML element attributes are now handled in i18n.js
 
   useEffect(() => {
     // Check if user has seen the demo modal before

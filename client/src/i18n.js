@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "tr",
-    lng: "tr",
+    lng: localStorage.getItem("i18nextLng") || "tr",
     debug: false,
     interpolation: {
       escapeValue: false,
@@ -27,6 +27,20 @@ i18n
     preload: ["tr", "en", "ar"],
     ns: ["translation"],
     defaultNS: "translation",
+    saveMissing: false,
+    missingKeyHandler: false,
   });
+
+// Dil değişikliğini localStorage'a kaydet
+i18n.on("languageChanged", (lng) => {
+  localStorage.setItem("i18nextLng", lng);
+  // HTML elementlerini güncelle
+  document.documentElement.lang = lng;
+  if (lng === "ar") {
+    document.documentElement.dir = "rtl";
+  } else {
+    document.documentElement.dir = "ltr";
+  }
+});
 
 export default i18n;

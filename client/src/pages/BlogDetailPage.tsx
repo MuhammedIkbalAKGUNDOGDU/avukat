@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
