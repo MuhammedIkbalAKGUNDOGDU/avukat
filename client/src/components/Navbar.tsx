@@ -16,6 +16,7 @@ export function Navbar() {
     { path: "/about", label: t("nav.about") },
     { path: "/practice-areas", label: t("nav.practiceAreas") },
     { path: "/team", label: t("nav.team") },
+    { path: "/blog", label: t("nav.blog") },
     { path: "/contact", label: t("nav.contact") },
   ];
 

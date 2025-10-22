@@ -4,6 +4,7 @@
     "about": "About Us",
     "practiceAreas": "Practice Areas",
     "team": "Our Team",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "pageTitle": {
@@ -13,6 +14,8 @@
     "practiceAreaDetail": "{{title}} - LawFirm",
     "team": "Our Team - LawFirm",
     "lawyerProfile": "{{name}} - LawFirm",
+    "blog": "Blog - LawFirm",
+    "blogDetail": "{{title}} - LawFirm",
     "contact": "Contact - LawFirm",
     "notFound": "Page Not Found - LawFirm"
   },
@@ -88,6 +91,46 @@
     "email": "info@lawfirm.com",
     "copyright": "© 2025 Your Law Firm. All Rights Reserved.",
     "madeBy": "Made by Softium Technologies"
+  },
+  "blog": {
+    "title": "Legal Content and Updates",
+    "subtitle": "Latest developments in the legal world, legislative changes and our expert opinions",
+    "readMore": "Read More",
+    "publishedOn": "Published On",
+    "author": "Author",
+    "category": "Category",
+    "tags": "Tags",
+    "relatedPosts": "Related Posts",
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "posts": {
+      "corporate_law_updates": {
+        "title": "2025 Corporate Law Changes",
+        "excerpt": "Important changes in corporate law have come into effect with the new year. Here's what you need to know...",
+        "content": "2025 brings important changes in corporate law. The new regulations will have different effects for SMEs and large companies. In this article, we examine the most important changes in detail.",
+        "category": "Corporate Law",
+        "tags": ["corporate law", "2025 changes", "SME", "commercial law"]
+      },
+      "family_law_guide": {
+        "title": "What to Consider During Divorce Process",
+        "excerpt": "Key points you need to know to protect your rights during the divorce process...",
+        "content": "The divorce process is complex both emotionally and legally. There are important points to consider to protect your rights and reach a fair solution in this process.",
+        "category": "Family Law",
+        "tags": ["divorce", "family law", "custody", "alimony"]
+      },
+      "criminal_defense_rights": {
+        "title": "Your Defense Rights in Criminal Cases",
+        "excerpt": "Basic rights you have in criminal cases and how to use these rights...",
+        "content": "Defense rights in criminal cases form the basis of the right to a fair trial. In this article, we explain the rights you have in criminal cases and how you can use these rights effectively.",
+        "category": "Criminal Law",
+        "tags": [
+          "criminal law",
+          "defense rights",
+          "fair trial",
+          "right to attorney"
+        ]
+      }
+    }
   },
   "demoModal": {
     "stage1": {
