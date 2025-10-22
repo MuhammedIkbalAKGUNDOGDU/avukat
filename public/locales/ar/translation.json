@@ -48,7 +48,8 @@
     "address": "123 شارع القانون، مدينة العدل، 10100",
     "phone": "+1 (555) 123-4567",
     "email": "info@lawfirm.com",
-    "copyright": "© 2025 مكتب المحاماة الخاص بك. جميع الحقوق محفوظة."
+    "copyright": "© 2025 مكتب المحاماة الخاص بك. جميع الحقوق محفوظة.",
+    "madeBy": "صُنع بواسطة Softium Technologies"
   },
   "practiceArea": {
     "viewDetails": "عرض التفاصيل",

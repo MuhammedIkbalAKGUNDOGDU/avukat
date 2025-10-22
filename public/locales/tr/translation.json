@@ -48,7 +48,8 @@
     "address": "123 Hukuk Cad, Adalet Şehri, 10100",
     "phone": "+1 (555) 123-4567",
     "email": "info@lawfirm.com",
-    "copyright": "© 2025 Hukuk Büronuz. Tüm Hakları Saklıdır."
+    "copyright": "© 2025 Hukuk Büronuz. Tüm Hakları Saklıdır.",
+    "madeBy": "Softium Technologies tarafından yapılmıştır"
   },
   "practiceArea": {
     "viewDetails": "Detayları Görüntüle",

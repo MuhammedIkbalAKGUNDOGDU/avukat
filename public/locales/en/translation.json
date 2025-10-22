@@ -48,7 +48,8 @@
     "address": "123 Law St, Justice City, 10100",
     "phone": "+1 (555) 123-4567",
     "email": "info@lawfirm.com",
-    "copyright": "© 2025 Your Law Firm. All Rights Reserved."
+    "copyright": "© 2025 Your Law Firm. All Rights Reserved.",
+    "madeBy": "Made by Softium Technologies"
   },
   "practiceArea": {
     "viewDetails": "View Details",
