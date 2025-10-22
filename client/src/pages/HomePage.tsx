@@ -1,18 +1,24 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { PracticeAreaCard } from "@/components/PracticeAreaCard";
 import { LawyerProfileCard } from "@/components/LawyerProfileCard";
 import { ContactForm } from "@/components/ContactForm";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedText } from "@/components/ui/animated-text";
 import { Meta } from "@/components/Meta";
-import { practiceAreas, lawyers } from "@/mockData";
-import { ArrowRight } from "lucide-react";
+import { practiceAreas, lawyers, blogPosts } from "@/mockData";
+import { ArrowRight, Calendar, Clock, User } from "lucide-react";
 import heroImage from "@assets/generated_images/Law_office_hero_background_03f9726c.png";
 
 export default function HomePage() {
   const { t } = useTranslation();
+
+  const handleBlogCardClick = (slug: string) => {
+    window.location.href = `/blog/${slug}`;
+  };
 
   return (
     <>
@@ -126,6 +132,106 @@ export default function HomePage() {
                 >
                   {t("nav.team")}
                   <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Blog Section */}
+        <section
+          className="bg-background py-20 md:py-24"
+          data-testid="section-blog"
+        >
+          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+            <div className="text-center mb-12">
+              <AnimatedText className="font-serif text-3xl font-bold text-foreground md:text-4xl mb-4">
+                {t("home.blogTitle")}
+              </AnimatedText>
+              <AnimatedText className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {t("home.blogSubtitle")}
+              </AnimatedText>
+            </div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {blogPosts.slice(0, 3).map((post, index) => (
+                <AnimatedSection key={post.id} delay={index * 0.1}>
+                  <Card
+                    className="group h-full overflow-hidden border-border/50 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/20 cursor-pointer"
+                    onClick={() => handleBlogCardClick(post.slug)}
+                  >
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={t(post.titleKey)}
+                        className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                      <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground">
+                        {t(post.categoryKey)}
+                      </Badge>
+                    </div>
+
+                    <CardHeader className="pb-3">
+                      <h3 className="font-serif text-xl font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
+                        {t(post.titleKey)}
+                      </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-3">
+                        {t(post.excerptKey)}
+                      </p>
+                    </CardHeader>
+
+                    <CardContent className="pt-0">
+                      <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                        <div className="flex items-center gap-1">
+                          <User className="h-3 w-3" />
+                          <span>{post.author}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>
+                            {new Date(post.publishedAt).toLocaleDateString(
+                              "tr-TR"
+                            )}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        {t(post.tagsKey, { returnObjects: true })
+                          .slice(0, 2)
+                          .map((tag: string, tagIndex: number) => (
+                            <Badge
+                              key={tagIndex}
+                              variant="secondary"
+                              className="text-xs"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                      </div>
+
+                      <div className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors rounded-md border border-border px-3 py-2 text-center text-sm font-medium">
+                        {t("blog.readMore")}
+                        <ArrowRight className="ml-2 h-3 w-3 inline" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </AnimatedSection>
+              ))}
+            </div>
+            <AnimatedSection delay={0.4} animationType="fadeIn">
+              <Link href="/blog" className="flex justify-center mt-12">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  data-testid="button-all-blog"
+                >
+                  {t("nav.blog")}
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </AnimatedSection>
