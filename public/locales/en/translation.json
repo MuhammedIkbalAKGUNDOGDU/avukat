@@ -6,6 +6,16 @@
     "team": "Our Team",
     "contact": "Contact"
   },
+  "pageTitle": {
+    "home": "Home - LawFirm",
+    "about": "About Us - LawFirm",
+    "practiceAreas": "Practice Areas - LawFirm",
+    "practiceAreaDetail": "{{title}} - LawFirm",
+    "team": "Our Team - LawFirm",
+    "lawyerProfile": "{{name}} - LawFirm",
+    "contact": "Contact - LawFirm",
+    "notFound": "Page Not Found - LawFirm"
+  },
   "hero": {
     "title": "Expert Legal Solutions You Can Trust",
     "subtitle": "Providing comprehensive legal services for individuals and businesses.",

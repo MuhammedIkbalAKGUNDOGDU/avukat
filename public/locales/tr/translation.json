@@ -6,6 +6,16 @@
     "team": "Ekibimiz",
     "contact": "İletişim"
   },
+  "pageTitle": {
+    "home": "Anasayfa - LawFirm",
+    "about": "Hakkımızda - LawFirm",
+    "practiceAreas": "Çalışma Alanları - LawFirm",
+    "practiceAreaDetail": "{{title}} - LawFirm",
+    "team": "Ekibimiz - LawFirm",
+    "lawyerProfile": "{{name}} - LawFirm",
+    "contact": "İletişim - LawFirm",
+    "notFound": "Sayfa Bulunamadı - LawFirm"
+  },
   "hero": {
     "title": "Güvenebileceğiniz Uzman Hukuki Çözümler",
     "subtitle": "Bireyler ve işletmeler için kapsamlı hukuki hizmetler sunuyoruz.",

@@ -6,6 +6,16 @@
     "team": "فريقنا",
     "contact": "اتصل بنا"
   },
+  "pageTitle": {
+    "home": "الرئيسية - LawFirm",
+    "about": "من نحن - LawFirm",
+    "practiceAreas": "مجالات الممارسة - LawFirm",
+    "practiceAreaDetail": "{{title}} - LawFirm",
+    "team": "فريقنا - LawFirm",
+    "lawyerProfile": "{{name}} - LawFirm",
+    "contact": "اتصل بنا - LawFirm",
+    "notFound": "الصفحة غير موجودة - LawFirm"
+  },
   "hero": {
     "title": "حلول قانونية خبيرة يمكنك الوثوق بها",
     "subtitle": "نقدم خدمات قانونية شاملة للأفراد والشركات.",
