@@ -21,8 +21,8 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 ease-in-out">
-      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+    <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 ease-in-out overflow-x-hidden">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           <Link
             href="/"

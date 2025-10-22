@@ -30,13 +30,13 @@ export default function HomePage() {
       />
       <div className="flex flex-col">
         <section
-          className="relative flex min-h-[90vh] items-center justify-center bg-cover bg-center"
+          className="relative flex min-h-[90vh] items-center justify-center bg-cover bg-center overflow-hidden"
           style={{ backgroundImage: `url(${heroImage})` }}
           data-testid="section-hero"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
 
-          <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 text-center md:px-8 lg:px-12">
+          <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 text-center sm:px-6 md:px-8 lg:px-12">
             <AnimatedText
               as="h1"
               className="font-serif text-5xl font-bold text-primary-foreground sm:text-6xl lg:text-7xl"
@@ -69,10 +69,10 @@ export default function HomePage() {
         </section>
 
         <section
-          className="bg-background py-20 md:py-24"
+          className="bg-background py-20 md:py-24 overflow-hidden"
           data-testid="section-practice-areas"
         >
-          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
             <AnimatedSection className="mb-12 text-center">
               <AnimatedText
                 as="h2"
@@ -105,8 +105,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="bg-muted py-20 md:py-24" data-testid="section-team">
-          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+        <section
+          className="bg-muted py-20 md:py-24 overflow-hidden"
+          data-testid="section-team"
+        >
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
             <AnimatedSection className="mb-12 text-center">
               <AnimatedText
                 as="h2"
@@ -141,10 +144,10 @@ export default function HomePage() {
 
         {/* Blog Section */}
         <section
-          className="bg-background py-20 md:py-24"
+          className="bg-background py-20 md:py-24 overflow-hidden"
           data-testid="section-blog"
         >
-          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
             <div className="text-center mb-12">
               <AnimatedText className="font-serif text-3xl font-bold text-foreground md:text-4xl mb-4">
                 {t("home.blogTitle")}
@@ -241,10 +244,10 @@ export default function HomePage() {
 
         {/* Contact Form Section */}
         <AnimatedSection
-          className="bg-gradient-to-br from-background via-background to-muted/30 py-20 md:py-24"
+          className="bg-gradient-to-br from-background via-background to-muted/30 py-20 md:py-24 overflow-hidden"
           data-testid="section-contact-form"
         >
-          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
               {/* Left side - Content */}
               <div className="space-y-6">
