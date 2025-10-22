@@ -38,7 +38,19 @@
       "error": "An error occurred while sending the message.",
       "required": "This field is required",
       "invalidEmail": "Please enter a valid email address",
-      "minLength": "Must be at least {{min}} characters"
+      "minLength": "Must be at least {{min}} characters",
+      "placeholders": {
+        "name": "Your full name",
+        "email": "example@email.com",
+        "phone": "+1 555 123 4567",
+        "subject": "Subject title",
+        "message": "Write your message here..."
+      },
+      "features": {
+        "quickResponse": "Quick response guarantee",
+        "freeConsultation": "Free initial consultation",
+        "privacy": "Privacy guarantee"
+      }
     }
   },
   "about": {

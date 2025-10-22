@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { PracticeAreaCard } from "@/components/PracticeAreaCard";
 import { LawyerProfileCard } from "@/components/LawyerProfileCard";
+import { ContactForm } from "@/components/ContactForm";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedText } from "@/components/ui/animated-text";
 import { Meta } from "@/components/Meta";
@@ -130,6 +131,53 @@ export default function HomePage() {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Contact Form Section */}
+        <AnimatedSection
+          className="bg-gradient-to-br from-background via-background to-muted/30 py-20 md:py-24"
+          data-testid="section-contact-form"
+        >
+          <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+              {/* Left side - Content */}
+              <div className="space-y-6">
+                <AnimatedText className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+                  {t("home.contactForm.title")}
+                </AnimatedText>
+                <AnimatedText className="text-lg text-muted-foreground leading-relaxed">
+                  {t("home.contactForm.subtitle")}
+                </AnimatedText>
+                <div className="space-y-4 pt-4">
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
+                    <span className="text-sm">
+                      {t("home.contactForm.features.quickResponse")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
+                    <span className="text-sm">
+                      {t("home.contactForm.features.freeConsultation")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
+                    <span className="text-sm">
+                      {t("home.contactForm.features.privacy")}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right side - Form */}
+              <AnimatedSection>
+                <div className="bg-background/80 backdrop-blur-sm rounded-2xl border border-border/50 shadow-lg p-6 md:p-8">
+                  <ContactForm />
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </>
   );

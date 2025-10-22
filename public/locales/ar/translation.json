@@ -38,7 +38,19 @@
       "error": "حدث خطأ أثناء إرسال الرسالة.",
       "required": "هذا الحقل مطلوب",
       "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
-      "minLength": "يجب أن يكون على الأقل {{min}} أحرف"
+      "minLength": "يجب أن يكون على الأقل {{min}} أحرف",
+      "placeholders": {
+        "name": "اسمك الكامل",
+        "email": "example@email.com",
+        "phone": "+966 50 123 4567",
+        "subject": "عنوان الموضوع",
+        "message": "اكتب رسالتك هنا..."
+      },
+      "features": {
+        "quickResponse": "ضمان الرد السريع",
+        "freeConsultation": "استشارة أولية مجانية",
+        "privacy": "ضمان الخصوصية"
+      }
     }
   },
   "about": {
