@@ -23,7 +23,23 @@
   },
   "home": {
     "practiceAreasTitle": "Çalışma Alanlarımız",
-    "teamTitle": "Uzman Avukatlarımızla Tanışın"
+    "teamTitle": "Uzman Avukatlarımızla Tanışın",
+    "contactForm": {
+      "title": "Bizimle İletişim Kurun",
+      "subtitle": "Hukuki danışmanlık için hemen iletişime geçin",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "submit": "Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Mesaj gönderilirken bir hata oluştu.",
+      "required": "Bu alan zorunludur",
+      "invalidEmail": "Geçerli bir e-posta adresi girin",
+      "minLength": "En az {{min}} karakter olmalıdır"
+    }
   },
   "about": {
     "title": "Hakkımızda",
@@ -60,6 +76,29 @@
     "email": "info@lawfirm.com",
     "copyright": "© 2025 Hukuk Büronuz. Tüm Hakları Saklıdır.",
     "madeBy": "Softium Technologies tarafından yapılmıştır"
+  },
+  "demoModal": {
+    "stage1": {
+      "title": "Demo Site Uyarısı",
+      "subtitle": "Bu site Softium Technologies tarafından hazırlanmıştır",
+      "description": "Bu web sitesi test ve demo amaçlı olarak hazırlanmıştır. Tüm veriler örnek verilerdir ve gerçek değildir. Bu kısıtlı bir demo sürümüdür.",
+      "details": "Detaylı toplantı sonrasında tüm özellikler, site yapısı ve tasarımlar değiştirilebilir ve geliştirilebilir. Tam özellikli bir web sitesi için bizimle iletişime geçin.",
+      "button": "Tamam, Anladım",
+      "linkText": "Softium Technologies'i Ziyaret Et"
+    },
+    "stage2": {
+      "title": "Demo Sunucu Uyarısı",
+      "subtitle": "Kısıtlı Demo Sunucusu",
+      "description": "Bu demo sunucusu üzerinde çalışmaktasınız. Bu nedenle:",
+      "limitations": [
+        "Görsel yüklemede yavaşlık yaşanabilir",
+        "Bazı özellikler sınırlı olabilir",
+        "Performans optimizasyonları uygulanmamıştır",
+        "Gerçek sunucu performansı farklıdır"
+      ],
+      "button": "Devam Et",
+      "countdown": "{{seconds}} saniye sonra otomatik olarak devam edecek"
+    }
   },
   "practiceArea": {
     "viewDetails": "Detayları Görüntüle",

@@ -23,7 +23,23 @@
   },
   "home": {
     "practiceAreasTitle": "Our Practice Areas",
-    "teamTitle": "Meet Our Expert Lawyers"
+    "teamTitle": "Meet Our Expert Lawyers",
+    "contactForm": {
+      "title": "Get In Touch With Us",
+      "subtitle": "Contact us immediately for legal consultation",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred while sending the message.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "minLength": "Must be at least {{min}} characters"
+    }
   },
   "about": {
     "title": "About Our Firm",
@@ -60,6 +76,29 @@
     "email": "info@lawfirm.com",
     "copyright": "© 2025 Your Law Firm. All Rights Reserved.",
     "madeBy": "Made by Softium Technologies"
+  },
+  "demoModal": {
+    "stage1": {
+      "title": "Demo Site Warning",
+      "subtitle": "This site is prepared by Softium Technologies",
+      "description": "This website is prepared for testing and demo purposes. All data is sample data and is not real. This is a limited demo version.",
+      "details": "After detailed meetings, all features, site structure and designs can be changed and improved. Contact us for a full-featured website.",
+      "button": "OK, I Understand",
+      "linkText": "Visit Softium Technologies"
+    },
+    "stage2": {
+      "title": "Demo Server Warning",
+      "subtitle": "Limited Demo Server",
+      "description": "You are working on this demo server. Therefore:",
+      "limitations": [
+        "Visual loading may be slow",
+        "Some features may be limited",
+        "Performance optimizations are not applied",
+        "Real server performance is different"
+      ],
+      "button": "Continue",
+      "countdown": "Will continue automatically in {{seconds}} seconds"
+    }
   },
   "practiceArea": {
     "viewDetails": "View Details",

@@ -1,18 +1,19 @@
-import { useEffect } from 'react';
-import { Switch, Route } from 'wouter';
-import { useTranslation } from 'react-i18next';
-import { Toaster } from '@/components/ui/toaster';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
-import HomePage from '@/pages/HomePage';
-import AboutPage from '@/pages/AboutPage';
-import PracticeAreasPage from '@/pages/PracticeAreasPage';
-import PracticeAreaDetailPage from '@/pages/PracticeAreaDetailPage';
-import TeamPage from '@/pages/TeamPage';
-import LawyerProfilePage from '@/pages/LawyerProfilePage';
-import ContactPage from '@/pages/ContactPage';
-import NotFound from '@/pages/not-found';
+import { useEffect, useState } from "react";
+import { Switch, Route } from "wouter";
+import { useTranslation } from "react-i18next";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { DemoModal } from "@/components/DemoModal";
+import HomePage from "@/pages/HomePage";
+import AboutPage from "@/pages/AboutPage";
+import PracticeAreasPage from "@/pages/PracticeAreasPage";
+import PracticeAreaDetailPage from "@/pages/PracticeAreaDetailPage";
+import TeamPage from "@/pages/TeamPage";
+import LawyerProfilePage from "@/pages/LawyerProfilePage";
+import ContactPage from "@/pages/ContactPage";
+import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
@@ -31,18 +32,32 @@ function Router() {
 
 function App() {
   const { i18n } = useTranslation();
+  const [showDemoModal, setShowDemoModal] = useState(false);
 
   useEffect(() => {
     const htmlElement = document.documentElement;
-    
-    if (i18n.language === 'ar') {
-      htmlElement.setAttribute('dir', 'rtl');
-      htmlElement.setAttribute('lang', 'ar');
+
+    if (i18n.language === "ar") {
+      htmlElement.setAttribute("dir", "rtl");
+      htmlElement.setAttribute("lang", "ar");
     } else {
-      htmlElement.setAttribute('dir', 'ltr');
-      htmlElement.setAttribute('lang', i18n.language);
+      htmlElement.setAttribute("dir", "ltr");
+      htmlElement.setAttribute("lang", i18n.language);
     }
   }, [i18n.language]);
+
+  useEffect(() => {
+    // Check if user has seen the demo modal before
+    const hasSeenDemoModal = sessionStorage.getItem("hasSeenDemoModal");
+    if (!hasSeenDemoModal) {
+      setShowDemoModal(true);
+    }
+  }, []);
+
+  const handleCloseDemoModal = () => {
+    setShowDemoModal(false);
+    sessionStorage.setItem("hasSeenDemoModal", "true");
+  };
 
   return (
     <TooltipProvider>
@@ -54,6 +69,7 @@ function App() {
         <Footer />
       </div>
       <Toaster />
+      <DemoModal isOpen={showDemoModal} onClose={handleCloseDemoModal} />
     </TooltipProvider>
   );
 }
